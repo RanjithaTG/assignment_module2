@@ -19,7 +19,7 @@
 
   function AlreadyBoughtController(ShoppingListCheckOffService) {
     var bought = this;
-    bought.items = ShoppingListCheckOffService.GetBoughtItems();
+    bought.items = ShoppingListCheckOffService.getBoughtItems();
   };
 
   function ShoppingListCheckOffService() {
@@ -33,11 +33,11 @@
     ];
     var boughtItems = [];
 
-    service.GetItemsToBuy = function() {
+    service.getItemsToBuy = function() {
       return toBuyItems;
     };
 
-    service.GetBoughtItems = function() {
+    service.getBoughtItems = function() {
       return boughtItems;
     };
 
