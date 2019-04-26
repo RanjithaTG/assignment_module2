@@ -11,7 +11,7 @@
 
   function ToBuyController(ShoppingListCheckOffService){
     var buy = this;
-    buy.items = ShoppingListCheckOffService.GetItemsToBuy();
+    buy.items = ShoppingListCheckOffService.etItemsToBuy();
     buy.buyItem = function(index) {
       ShoppingListCheckOffService.buyItem(index);
     };
