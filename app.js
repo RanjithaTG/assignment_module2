@@ -1,8 +1,8 @@
 (function() {
 	'use strict';
 
-	angular.module("LunchCheck", []).controller(
-			'LunchCheckController',
+	angular.module("ShoppingListCheckOff", []).controller(
+			'ToBuyController',
 			function($scope) {
 				$scope.checkFoodCount = function() {
 					var items = [];
